@@ -15,16 +15,19 @@ def asstCount():
     for c in word:
         coll[c] += 1
         
-    return coll["*"]
+    return int(coll["*"])
     
 def posWords():
-    o=t=r=f=i = list(string.ascii_uppercase)
-    arrs = [o,t,r,f,i]
+    o = t = r = f = i = list(string.ascii_uppercase)
+    print(i)
     count = asstCount()
-    for i in range(count):
-        word = itertools.permutations([arrs[0:count]])
-        word = "".join(word)
-        print(word)
+    arrs = [o,t,r,f,i][0:count]
+    for y in range(len(arrs)):
+
+        for x in range(26):
+            arrs
+            for z in range(26):
+
+
         
 posWords()
-        
